@@ -1,0 +1,16 @@
+{
+  "name": "frikimusic-hires-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend multi-fuente FLAC para FrikiMusic",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test:contract": "node -e \"import('./lib/contract.test.js').then(m=>m.run()).then(r=>console.log('CONTRACT OK',JSON.stringify(r.stream))).catch(e=>{console.error('CONTRACT FAIL:',e.message);process.exit(1)})\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {}
+}
